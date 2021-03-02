@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomNumber</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container bg-transparent">
+        <div class="col-4 offset-4">
+            <p>Click below to generate random number:</p>
+            <p id="rand"></p>
+            <button onclick="randomNum()" class="btn btn-outline-danger " id="countButton">clickHere</button>
+        </div>
+
+        <script>
+            var res = document.getElementById('rand');
+            function randomNum(){
+                var min = 00000000;
+                var max = 99999999;
+                res.innerHTML = Math.floor(Math.random()* (max-min+1)+min );
+                 }
+        </script>
+
+    </div>
+    
+</body>
+</html>
